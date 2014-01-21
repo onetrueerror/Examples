@@ -7,12 +7,12 @@ using OneTrueError.Reporting.Reporters;
 
 namespace CustomContextCollection
 {
-    internal class UserIdentityProvider : IContextInfoProvider
+internal class UserIdentityProvider : IContextInfoProvider
+{
+    public ContextInfo Collect(IErrorReporterContext context)
     {
-        public ContextInfo Collect(IErrorReporterContext context)
-        {
-            var collection = new Dictionary<string, string> {{"AccountName", Environment.UserName}};
-            return new ContextInfo("UserIdentity", collection);
-        }
+        var collection = new Dictionary<string, string> {{"AccountName", Environment.UserName}};
+        return new ContextInfo("UserIdentity", collection);
     }
+}
 }
