@@ -1,4 +1,5 @@
 ﻿using System;
+using Manual_Reporting.Tools;
 using OneTrueError.Reporting;
 
 namespace Manual_Reporting.BasicExample

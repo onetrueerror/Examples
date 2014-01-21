@@ -1,4 +1,4 @@
-﻿namespace Manual_Reporting
+﻿namespace Manual_Reporting.Tools
 {
     public interface ISample
     {

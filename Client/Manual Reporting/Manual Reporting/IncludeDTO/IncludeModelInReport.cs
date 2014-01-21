@@ -1,4 +1,5 @@
 ﻿using System;
+using Manual_Reporting.Tools;
 using OneTrueError.Reporting;
 
 namespace Manual_Reporting.IncludeDTO
@@ -33,7 +34,7 @@ namespace Manual_Reporting.IncludeDTO
             }
             catch (Exception exception)
             {
-                //Normally we would not do like this but activate
+                // Normally we would not catch exceptions just to report them. Instead we would use
                 // one of the OTE framework libraries to catch unhandled exceptions in the top layer.
                 //
                 // It gives much cleaner code.

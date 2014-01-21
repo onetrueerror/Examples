@@ -52,17 +52,18 @@
     <Compile Include="IncludeDTO\IncludeModelInReport.cs" />
     <Compile Include="IncludeDTO\UserEntity.cs" />
     <Compile Include="IncludeDTO\UserRepository.cs" />
-    <Compile Include="ISample.cs" />
+    <Compile Include="Tools\ISample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BasicExample\SimpleSample.cs" />
-    <Compile Include="DemoProvider.cs" />
+    <Compile Include="Tools\DemoProvider.cs" />
     <Compile Include="SuportsDynamicAsContextInfo\UseDynamicToIncludeContextInfo.cs" />
     <Compile Include="SuportsDynamicAsContextInfo\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="ReadMe.md" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
