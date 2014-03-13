@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Error caught and submitted";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+<article>
+    <p>
+        Error has been caught and submitted for analysis. This could have been any other business page.
+    </p>
+    <p>
+        Log into http://onetrueerror.com with demo/demo to see the error.
+    </p>
+  
+</article>
+
+<aside>
+    <h3>Aside Title</h3>
+    <p>
+        Use this area to provide additional information.
+    </p>
+    <ul>
+        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+        <li>@Html.ActionLink("About", "About", "Home")</li>
+        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+    </ul>
+</aside>

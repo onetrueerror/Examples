@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                To learn more about OneTrueError visit
+                <a href="http://onetrueerror.com" title="OneTrueError Website">http://onetrueerror.com</a>.
+                If you have any questions about OneTrueError email
+                <a href="mailto:support@OneTrueError.com">our support</a>.
+            </p>
+            <p>
+                Remember to press F5/Continue if Visual Studio picks up the exception.
+            </p>
+        </div>
+    </section>
+}
+<h3>Error examples:</h3>
+<ol class="round">
+    <li class="one">
+        <h5>File Not Found</h5>
+        Illustrates how we adjust our duplicate detection algorithm differently for different exceptions. The stack trace is identical for the exception.
+        <a href="@Url.Content("~/some/missing/page")">First not found url</a> |
+        <a href="@Url.Content("~/some/other/page")">Second not found url</a>
+    </li>
+
+    <li class="two">
+        <h5>Http post with data</h5>
+        <p>Example demonstrating that all vars are picked up.</p>
+        <form method="POST" action="@Url.Action("Post")">
+            <input type="hidden" name="SomeVar" value="Hello"/>
+            <input type="submit"/>
+        </form>
+    </li>
+
+    <li class="three">
+        <h5>Attach viewmodel</h5>
+        <p>
+            View models can be attached to an exception
+        </p>
+        @Html.ActionLink("Submit", "PostViewModel", new{FirstName="Arne", LastName="Kalle"});
+    </li>
+</ol>
